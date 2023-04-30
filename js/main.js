@@ -124,8 +124,8 @@ function display_time_table (){
 
     var work_division = work_time.length-2;
 
-    var estimated_task_to_finish_initial = Math.ceil(allocated_task / work_division);
-    var estimated_task_to_finish_additional = Math.ceil((predicted_additional_task) / work_division);
+    var estimated_task_to_finish_initial = Math.ceil((predicted_additional_task / work_division)-predicted_additional_task);
+    var estimated_task_to_finish_additional = Math.ceil(predicted_additional_task / work_division);
 
     for (i = 0; i < work_time.length; i++) {
         if(allocated_task < 0){
