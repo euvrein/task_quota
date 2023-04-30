@@ -139,10 +139,10 @@ function display_time_table (){
                 '<tr>'+
                     '<td>'+work_time[i]+'</td>'+
                     '<td>'+allocated_task+'</td>'+
-                    '<td>'+(predicted_additional_task)+'</td>'+
+                    '<td>'+predicted_additional_task+'</td>'+
                 '</tr>'
             )
-                allocated_task = (predicted_additional_task*2) - estimated_task_to_finish_additional;
+                allocated_task = estimated_task_to_finish_additional - ($("#predicted_additional_task").val()*2);
                 predicted_additional_task -= estimated_task_to_finish_additional;
         } else {
             $('#timetable').append(
@@ -156,7 +156,7 @@ function display_time_table (){
         '<p>'+
             'You need to do atleast <strong>'+
                 estimated_task_to_finish_additional+
-            ' task/s every thirty minutes</strong> to finish your work on time'+
+            ' tasks every thirty minutes</strong> to finish your work on time'+
         '</p>'
     )
 };
