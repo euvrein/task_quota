@@ -142,7 +142,7 @@ function display_time_table (){
                     '<td>'+(predicted_additional_task)+'</td>'+
                 '</tr>'
             )
-                allocated_task -= estimated_task_to_finish_additional;
+                allocated_task = (predicted_additional_task*2) - estimated_task_to_finish_additional;
                 predicted_additional_task -= estimated_task_to_finish_additional;
         } else {
             $('#timetable').append(
