@@ -155,7 +155,7 @@ function display_time_table (){
     $('#comment').append(
         '<p>'+
             'You need to do atleast <strong>'+
-                estimated_task_to_finish_initial + ' to ' + estimated_task_to_finish_additional+
+                estimated_task_to_finish_additional+
             ' tasks every thirty minutes</strong> to finish your work on time'+
         '</p>'
     )
