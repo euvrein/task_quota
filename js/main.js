@@ -156,7 +156,7 @@ function display_time_table (){
         '<p>'+
             'You need to do atleast <strong>'+
                 estimated_task_to_finish_additional+
-            ' tasks every thirty minutes</strong> to finish your work on time'+
+            ' task/s every thirty minutes</strong> to finish your work on time'+
         '</p>'
     )
 };
