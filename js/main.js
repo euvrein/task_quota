@@ -124,7 +124,6 @@ function display_time_table (){
 
     var work_division = work_time.length-2;
 
-    var estimated_task_to_finish_initial = Math.ceil((predicted_additional_task / work_division)-predicted_additional_task);
     var estimated_task_to_finish_additional = Math.ceil(predicted_additional_task / work_division);
 
     for (i = 0; i < work_time.length; i++) {
@@ -143,7 +142,7 @@ function display_time_table (){
                     '<td>'+(predicted_additional_task)+'</td>'+
                 '</tr>'
             )
-                allocated_task -= estimated_task_to_finish_initial;
+                allocated_task -= estimated_task_to_finish_additional;
                 predicted_additional_task -= estimated_task_to_finish_additional;
         } else {
             $('#timetable').append(
