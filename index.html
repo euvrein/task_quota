@@ -8,6 +8,7 @@
         <meta name="author" content="Euvrein">
         <!-- Latest compiled and minified CSS -->
         <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/main.css" rel="stylesheet">
     </head>
     <body>
         <div class="container mt-3">
@@ -15,7 +16,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 <span id="warning"></span>
             </div>
-            <div class="text-center">
+            <!-- <div class="text-center">
                 <div class="spinner-grow text-muted"></div>
                 <div class="spinner-grow text-primary"></div>
                 <div class="spinner-grow text-success"></div>
@@ -25,10 +26,17 @@
                 <div class="spinner-grow text-secondary"></div>
                 <div class="spinner-grow text-dark"></div>
                 <div class="spinner-grow text-light"></div>
-            </div>
-            <div class="card-lg m-2 p-3">
-                <div class="input-group mb-2"></div>
-                    <select class="form-select" aria-label="Start" id="start_time">
+            </div> -->
+            <!-- <div class="card-lg m-2 p-3"> -->
+                
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <textarea class="form-control" placeholder="Notes..." rows="20"></textarea>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <select class="form-select mb-3" aria-label="Start" id="start_time">
                         <option selected disabled>What time are you starting?</option>
                         <option value="0730">07:30 AM</option>
                         <option value="0800">08:00 AM</option>
@@ -58,7 +66,7 @@
                         <span class="spinner-grow spinner-grow-sm"></span>
                         Initial Task Allocated
                     </button>
-                    <input id="allocated_task" type="number" class="form-control col-3" step="5" min="20" max="150" placeholder="130" value="130">
+                    <input id="allocated_task" type="number" class="form-control" step="5" min="20" max="150" placeholder="130" value="130">
                 </div>
 
                 <div class="input-group mb-2">
@@ -66,11 +74,11 @@
                         <span class="spinner-grow spinner-grow-sm"></span>
                         Expected Additional Task
                     </button>
-                    <input id="predicted_additional_task" type="number" class="form-control col-3" step="0" min="0" max="50" placeholder="20" value="20">
+                    <input id="predicted_additional_task" type="number" class="form-control" step="0" min="0" max="50" placeholder="20" value="20">
                 </div>
 
                 <div class="mb-5"></div>
-            </div>            
+            <!-- </div>             -->
         </div>
 
 
